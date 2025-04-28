@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url('/static/images/{{ background_image }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        button {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>How are you feeling?</h1>
+    <div class="button-container">
+        <a href="/sad"><button>I'm Sad</button></a>
+        <a href="/hug"><button>Need a Hug</button></a>
+        <a href="/miss"><button>Missing you</button></a>
+    </div>
+</body>
+</html>
